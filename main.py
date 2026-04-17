@@ -26,7 +26,7 @@ while True:
             no_times += 1
             print("u have rolled the dice", no_times, "times")
         
-        if no_times == 3:
+        if no_times % 3 == 0:
             choice = input("\nYou've played 3 rounds! Want to keep playing? (yes/no): ").lower()
             if choice != "yes":
                 print("game is over final score:", score , "and u have rolled the dice", no_times, "times")
